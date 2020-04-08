@@ -1,6 +1,7 @@
 <template>
   <div>
     <b-container>
+      <br>
       <h1>Cargar Personaje</h1>
       <b-form @submit.prevent>
         <b-form-group label="Episodio:">
@@ -12,8 +13,9 @@
         </b-form-group>
 
         <b-button @click="postPersonaje()" type="submit" variant="primary">Guardar</b-button>
-        <!--<b-button type="reset" variant="danger">Eliminar</b-button>-->
-
+        <br>
+        <br>
+        <br>
         <b-form-group @submit.prevent="getPersonajeEps()">
           <h1>personajes en el episodio</h1>
           <b-card-group deck>

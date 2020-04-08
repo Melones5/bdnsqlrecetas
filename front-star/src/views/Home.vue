@@ -1,7 +1,9 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <Listar msg="Welcome to Your Listao vro App"/>
+
+  <div class="home">	
+    <br>
+    <b-img center src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Star_Wars_-_The_Rise_of_Skywalker_logo.png/320px-Star_Wars_-_The_Rise_of_Skywalker_logo.png" alt="Center image"></b-img>
+    <Listar msg="Welcome to Your Listado Bro App"/>
   </div>
 </template>
 
@@ -16,3 +18,6 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+</style>
