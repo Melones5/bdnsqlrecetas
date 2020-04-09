@@ -3,7 +3,7 @@
     <b-navbar toggleable="md" type="dark" variant="dark">
       <b-container>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-        <b-navbar-brand href="#">Star-wars</b-navbar-brand>
+        <b-navbar-brand href="">Star-wars</b-navbar-brand>
 
         <b-collapse is-nav id="nav-collapse">
           <b-navbar-nav>
@@ -19,7 +19,10 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 
+#app {
+  background-color: rgb(107, 107, 107);
+}
 
 </style>
