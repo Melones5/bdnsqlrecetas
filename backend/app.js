@@ -51,7 +51,7 @@ redis_cliente.del("kylo", function(err, value){
     console.log("borrado")
 })*/
 
-redis_cliente.flushdb();
+//redis_cliente.flushdb();
 
 app.get('/', function( req, res){
     redis_cliente.get("kylo", function(err, value){
@@ -72,7 +72,7 @@ app.get('/listar', function( req, res){
 })
 
 app.delete('/baja/:episodio/:personaje', function(req,res){
-    redis_cliente.lrem(req.params.episodio,0,req.params.personaje)
+    redis_cliente.lrem(req.params.episodio,1,req.params.personaje)
     res.send("Eliminado Correctamente")
 })
 

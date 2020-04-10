@@ -1,5 +1,7 @@
 <template>
   <div class="listar">
+     <br>
+    <br>	
     <CargarPersonaje/>
   </div>
 </template>
