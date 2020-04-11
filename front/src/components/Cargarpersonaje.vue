@@ -22,13 +22,12 @@
           >El campo nombre es obligatorio.</div>
           <!--<div v-if="!$v.personaje.minLength" class="invalid-feedback">El nombre necesita como mínimo {{$v.personaje.$params.minLength.min}} letras</div>-->
         </b-form-group>
-
         <b-button @click="postPersonaje()" type="submit" variant="primary">Guardar</b-button>
       </b-form>
       <br />
       <div>
         <h2 class="text-fluid">Personajes en el Episodio</h2>
-        <b-list-group style="max-width: 300px;" class="mt-6">
+        <b-list-group style="max-width: 520px;" class="mt-6">
           <b-list-group-item
             class="d-flex align-items-center"
             v-for="item in personajeEps"
@@ -106,7 +105,8 @@ export default {
             episodio: this.episodio,
             personaje: this.personaje
           })
-          .then(function(res) {
+          .then(function(res) {        
+            _this.personaje = "";    
             _this.getPersonajeEps();
             console.log(res);
           })

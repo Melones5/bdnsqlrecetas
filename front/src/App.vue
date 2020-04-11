@@ -17,6 +17,7 @@
       <br>
       <br>
       <b-img class="mt-5" center src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Star_Wars_Yellow_Logo.svg/320px-Star_Wars_Yellow_Logo.svg.png" alt="Center image"></b-img>
+      <!--Encagado de llamar las vistas-->
       <router-view />
     </b-container>
   </div>
